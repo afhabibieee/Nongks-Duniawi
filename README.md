@@ -16,7 +16,7 @@ Submission proyek aplikasi sederhana dari Kelas Membuat Aplikasi Android untuk P
 <img src="https://user-images.githubusercontent.com/70691510/127438321-305a05d3-9612-43cb-9fc8-9a8d208af328.png"
      alt="Splash Screen"
      style="float: left; margin-right: 10px;"
-     width="250" />
+     width="250" /> <br>
 <img src="https://user-images.githubusercontent.com/70691510/127438412-dc69c921-34fd-40fa-83c3-c17dd47d4c34.png"
      alt="Splash Screen"
      style="float: left; margin-right: 10px;"
