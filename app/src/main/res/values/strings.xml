@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nongks Duniawi</string>
+    <string name="name">Place Name</string>
+    <string name="city">City</string>
+    <string name="visit">Find us</string>
+    <string name="sevice_options">Service options</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="dialog_call">Call</string>
+    <string name="action_profile">Profile</string>
+    <string name="profile_name">Adil Faruq Habibi</string>
+    <string name="profile_email">adilmanchunian17@gmail.com</string>
+</resources>

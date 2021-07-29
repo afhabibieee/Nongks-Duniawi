@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/backgrounds/scenic"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/name"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tv_item_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/city"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TableRow
+                style="@style/Row">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/sevice_options" />
+
+                <TextView
+                    android:id="@+id/tv_service_option_content"
+                    style="@style/TextSpec.Value"
+                    android:text="@string/sevice_options" />
+            </TableRow>
+
+            <TableRow
+                style="@style/Row">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/phone"/>
+
+                <TextView
+                    android:id="@+id/tv_phone_content"
+                    style="@style/TextSpec.Value"
+                    android:text="@string/phone" />
+            </TableRow>
+
+            <TableRow
+                style="@style/Row">
+
+                <TextView
+                    style="@style/TextSpec.Field"
+                    android:text="@string/address" />
+
+                <TextView
+                    android:id="@+id/tv_address_content"
+                    style="@style/TextSpec.Value"
+                    android:text="@string/address" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/layout_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_intent_map"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/visit"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btn_set_dialog_call"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="@string/dialog_call"
+            android:fontFamily="@font/montserrat_medium"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+</RelativeLayout>
